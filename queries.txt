@@ -1,0 +1,13 @@
+SELECT [MeterKey]
+      ,[DateKey]
+      ,[TimeKey]
+      ,[MeterReading]
+      ,[Source]
+      ,[ApparentTemperature]
+      ,[IsSuspicious]
+      ,[AirTemperature]
+      ,[DewPointTemperature]
+      ,[RelativeHumidity]
+  
+  FROM [Leap].[dbo].[MeterReadings]
+  WHERE (DateKey > 20200101) AND (DateKey < 20200401) AND [MeterKey]=123
